@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Django backend with Daphne (ASGI)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/venv/bin/daphne",
+      "args": [
+        "octofit_tracker.asgi:application"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
