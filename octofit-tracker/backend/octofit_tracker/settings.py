@@ -108,6 +108,17 @@ TEMPLATES = [
     },
 ]
 
+
+# Channels ASGI application
+ASGI_APPLICATION = 'octofit_tracker.asgi.application'
+
+# Channels layer config (using in-memory for dev, can switch to Redis)
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    },
+}
+
 WSGI_APPLICATION = 'octofit_tracker.wsgi.application'
 
 
